@@ -14,24 +14,18 @@ in course pages and access is restricted to authenticated subscribers.
 
 ## Getting Started
 
+
+1. Ensure Python 3 is installed on your system.
+   Create and activate a virtual environment::
+
+       python3 -m venv venv
+       source venv/bin/activate
+
+   Install the project requirements::
+
+       pip install -r requirements.txt
+=======
 1. Install Python 3 and Django::
 
        pip install django
 
-2. Run database migrations::
-
-       ./manage.py migrate
-
-3. Create a superuser for administration::
-
-       ./manage.py createsuperuser
-
-4. Start the development server::
-
-       ./manage.py runserver
-
-5. Log in and add `Course` records in the admin site. Use the YouTube
-   share link from your private videos.
-
-This project serves as a foundation. You can integrate a payment system
-by tracking active subscriptions and restricting content accordingly.
