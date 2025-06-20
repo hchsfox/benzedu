@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Courses</title>
+</head>
+<body>
+<h1>Available Courses</h1>
+<ul>
+{% for course in courses %}
+    <li>
+        <h2>{{ course.title }}</h2>
+        <p>{{ course.description }}</p>
+        <iframe width="560" height="315" src="{{ course.youtube_url }}" frameborder="0" allowfullscreen></iframe>
+    </li>
+{% endfor %}
+</ul>
+</body>
+</html>
